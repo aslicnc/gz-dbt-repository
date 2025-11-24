@@ -15,3 +15,5 @@ identifier: raw_gz_sales
 identifier: raw_gz_product
 - name: ship
 identifier: raw_gz_ship
+
+select * from {{source(’raw’, ‘sales’)}}
