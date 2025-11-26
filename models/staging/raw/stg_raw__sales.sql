@@ -10,10 +10,10 @@ renamed as (
 
     select
         date_date,
-        orders_id,
-        pdt_id as products_id,
-        revenue,
-        quantity
+        cast(orders_id as int64) as orders_id,
+        pdt_id,
+        cast(revenue as int64) as revenue,
+        cast(quantity as int64) as quantity
 
     from source
 
